@@ -49,9 +49,9 @@
   become_user: root
   file: "path={{ STATIC_DEST }} state=directory owner=root"
 
-- name: Collect Static
-  become: yes
-  become_user: root
-  shell: "{{ VENV_PATH }}/bin/python manage.py collectstatic --noinput -i gulpfile.js -i package.json -i temp -i node_modules > /dev/null 2>&1"
-  args:
-    chdir: "{{ PRJ_REPO_PATH_MAIN }}"
+#- name: Collect Static
+#  become: yes
+#  become_user: root
+#  shell: "{{ VENV_PATH }}/bin/python manage.py collectstatic --noinput -i gulpfile.js -i package.json -i temp -i node_modules > /dev/null 2>&1"
+#  args:
+#    chdir: "{{ PRJ_REPO_PATH_MAIN }}"

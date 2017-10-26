@@ -12,7 +12,7 @@
   failed_when: False
 
 - name: "{{ pkg.name }} / install as editable"
-  shell: "{{ VENV_PATH }}/bin/pip install -e {{ pkg.path }}"
+  shell: "{{ VENV_PATH }}/bin/pip install -e git+https://github.com/wfp-ose/geodash-framework-django.git#egg=geodash-framework-django.git"
   args:
     chdir: "{{ pkg.parent }}"
   when: editable_result.rc == 1

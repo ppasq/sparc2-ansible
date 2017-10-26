@@ -1,6 +1,6 @@
 ---
 
-- set_fact: static_package_dir="{{ item.value }}"
+- set_fact: static_package_dir="{{ STATIC_SRC }}"
 
 - shell: "cat {{ static_package_dir }}/package.json | jq -r '.devDependencies'"
   register: result

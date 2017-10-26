@@ -24,7 +24,7 @@
   become_user: root
   apt: name={{ item }} state=present
   with_items:
-    - libgdal1h
+    - libgdal20
     - libgdal-dev
     - libgeos-dev
     - libproj-dev
