@@ -125,6 +125,7 @@ supervisorctl status
 In case stop or kill all processes
 
 ```
+supervisorctl stop sparc2:*
 ps -ef | grep supervisord
 # Change 1234 with the pid
 kill -s SIGTERM 1234
