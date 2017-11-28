@@ -115,9 +115,9 @@ Modify the gunicorn path inside the supervisord.conf
 
 ```
 nano /home/vagrant/sparc2.git/supervisord.conf
-#Modify the line:
+# Modify the line:
 command=/usr/local/bin/gunicorn sparc2.wsgi -c gunicorn.conf.py
-#Into:
+# Into:
 command=/home/vagrant/.venvs/sparc2/bin/gunicorn sparc2.wsgi -c gunicorn.conf.py
 ```
 Verify that all supervisor processes are stopped
