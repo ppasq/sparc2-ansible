@@ -1,7 +1,7 @@
 # sparc2-ansible
 Ansible Project for Sparc 2.x
 
-# Installation
+# Installation for Development
 
 On the host machine, you'll need Ansible installed.
 
