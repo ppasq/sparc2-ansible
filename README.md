@@ -101,7 +101,7 @@ host    all             all              all                    password
 Then restart PostgreSQL.
 
 ```
-sudo service paostgresql restart
+sudo service postgresql restart
 ```
 
 Restore the database
