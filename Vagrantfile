@@ -26,7 +26,7 @@ Vagrant.configure(2) do |config|
   # config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.network "forwarded_port", guest: 80, host: 8000
   config.vm.network "forwarded_port", guest: 8080, host: 8080
-  config.vm.network "forwarded_port", guest: 5432, host: 5432
+  config.vm.network "forwarded_port", guest: 5432, host: 1234
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -41,13 +41,13 @@ Vagrant.configure(2) do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  config.vm.synced_folder "~/workspaces/public/sparc2.git", "/home/vagrant/sparc2.git"
-  config.vm.synced_folder "~/workspaces/public/geodash-framework-django.git", "/home/vagrant/geodash-framework-django.git"
-  config.vm.synced_folder "~/workspaces/public/geodash-base.git", "/home/vagrant/geodash-base.git"
+  config.vm.synced_folder "~/wfp/sparc2.git", "/home/vagrant/sparc2.git"
+  config.vm.synced_folder "~/wfp/geodash-framework-django.git", "/home/vagrant/geodash-framework-django.git"
+  config.vm.synced_folder "~/wfp/geodash-base.git", "/home/vagrant/geodash-base.git"
   #config.vm.synced_folder "~/workspaces/public/geodash.js.git", "/home/vagrant/geodash.js.git"
-  config.vm.synced_folder "~/workspaces/public/sparc2-core.js.git", "/home/vagrant/sparc2-core.js.git"
-  config.vm.synced_folder "~/workspaces/public/sparc2-plugin-calendar.git", "/home/vagrant/sparc2-plugin-calendar.git"
-  config.vm.synced_folder "~/workspaces/public/sparc2-plugin-sidebar.git", "/home/vagrant/sparc2-plugin-sidebar.git"
+  config.vm.synced_folder "~/wfp/sparc2-core.js.git", "/home/vagrant/sparc2-core.js.git"
+  config.vm.synced_folder "~/wfp/sparc2-plugin-calendar.git", "/home/vagrant/sparc2-plugin-calendar.git"
+  config.vm.synced_folder "~/wfp/sparc2-plugin-sidebar.git", "/home/vagrant/sparc2-plugin-sidebar.git"
   #config.vm.synced_folder "~/workspaces/public/sparc2-plugin-welcome.git", "/home/vagrant/sparc2-plugin-welcome.git"
   #config.vm.synced_folder "~/workspaces/public/geodash-plugin-map-map.git", "/home/vagrant/geodash-plugin-map-map.git"
 
