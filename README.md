@@ -160,5 +160,6 @@ vagrant up
 vagrant ssh
 workon sparc2
 supervisord -c /home/vagrant/sparc2.git/supervisord.conf
-
+cd /home/vagrant/sparc2.git/
+python manage.py runserver 0.0.0.0:8000
 ```
